@@ -1,0 +1,53 @@
+@import "../../scss/main.scss";
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.title {
+  @extend %shared-title;
+  margin: {
+    bottom: $gutter !important;
+  }
+}
+
+.btn {
+  @extend %shared-btn;
+}
+
+.link {
+  @extend %shared-links;
+}
+
+.icon {
+  @extend %shared-icon;
+}
+
+.input {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: {
+    bottom: 40px;
+  }
+  & > .link {
+    align-self: flex-start;
+  }
+}
+
+.btn-block {
+  div {
+    margin: {
+      top: 10px;
+    }
+  }
+}
+
+.register {
+  margin: {
+    left: 0px;
+  }
+}

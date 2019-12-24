@@ -1,0 +1,52 @@
+@import "../../scss/vars";
+
+.wrapper {
+  height: 60px;
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-bottom: 1px solid rgb(234, 234, 234);
+
+  .icon {
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(234, 234, 234);
+    img {
+      height: 32px;
+    }
+  }
+
+  .left-menu-items,
+  .right-menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-right: 1px solid rgb(234, 234, 234);
+  }
+
+  .right-menu-items {
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: none;
+  }
+
+  i {
+    line-height: 0.9;
+    font-size: 1.15em;
+    margin: {
+      right: 0.8rem;
+    }
+    color: $btn-blue;
+  }
+
+  a, p {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: $btn-blue;
+    font-weight: bold;
+  }
+}
